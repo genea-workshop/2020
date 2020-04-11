@@ -163,6 +163,10 @@ section.iva-section .iva-item .iva-date {
   width: 100px;
 }
 
+.programme-date-table td:first-child {
+  width: 120px;
+}
+
 .bg-primary {
   background-color: #BD5D38 !important;
 }
