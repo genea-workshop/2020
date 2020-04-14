@@ -6,7 +6,9 @@
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+
       if (target.length) {
+        gtag('config', 'UA-163300228-1', {'page_path': "2020/" + this.hash.slice(1)});
         $('html, body').animate({
           scrollTop: (target.offset().top)
         }, 1000, "easeInOutExpo");
@@ -14,6 +16,7 @@
       }
     }
   });
+  
 
   // Closes responsive menu when a scroll trigger link is clicked
   $('.js-scroll-trigger').click(function() {
@@ -24,5 +27,6 @@
   $('body').scrollspy({
     target: '#sideNav'
   });
+  
 
 })(jQuery); // End of use strict
