@@ -161,6 +161,7 @@ section.iva-section .iva-item .iva-date {
 
 .date-table td:first-child {
   width: 100px;
+  vertical-align: text-top;
 }
 
 .programme-date-table td:first-child {
